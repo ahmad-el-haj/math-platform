@@ -1,0 +1,4 @@
+# Cloudflare Pages SPA fallback.
+# Every unknown path is served by index.html so that client side routes
+# (/app/student/classes, /app/teacher/documents, ...) survive a hard refresh.
+/*    /index.html   200
