@@ -46,7 +46,7 @@ export default function TeacherDashboard() {
   return (
     <>
       <PageHeader
-        title={`مرحبًا ${teacherName}`}
+        title="أهلاً وسهلاً بالأستاذ وسيم"
         description="أدر صفوفك ودروسك وموادك التعليمية من هنا. كل تعديل يُحفظ في قاعدة البيانات فورًا."
         action={
           <Link to="/app/teacher/classes/new" className={buttonStyles('primary', 'sm')}>
