@@ -20,7 +20,7 @@ import { buttonStyles } from '@/components/ui/button'
 import { formatRelativeTime, displayName } from '@/lib/format'
 
 export default function TeacherDashboard() {
-  const { user, profile } = useAuth()
+  const { user } = useAuth()
 
   const statsQuery = useQuery({
     queryKey: ['stats', 'teacher', user?.id],
@@ -39,7 +39,7 @@ export default function TeacherDashboard() {
     enabled: Boolean(user?.id),
   })
 
-  const teacherName = displayName(profile?.full_name, user?.email)
+  
   const classes = classesQuery.data ?? []
   const conversations = conversationsQuery.data ?? []
 
